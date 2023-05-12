@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+.container {
+    max-width: 900px;
+    display: grid;
+    grid-template: repeat(5, auto) / repeat(3,auto);
+    grid-template-areas: 
+    "link link link"
+    "sidebar games games"
+    "sidebar games games"
+    "sidebar games games"
+    "section section section";
+    gap: 10px;
+    margin: 50px 100px;
+}
+.navegador {
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+}
+.primera-barra {
+    width: 100%;
+    height: 35px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 35px;
+}
+.primera-barra a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.segunda-barra {
+    width: 100%;
+    height: 65px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+.segunda-barra a {
+    margin-right: 20px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.segunda-barra img {
+    width: 130px;
+}
+.segunda-barra input {
+    width: 260px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #eeeeee;
+}
+.publicidad {
+    grid-area: link;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 4px solid #0094ff;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.publicidad img {
+    width: 779px;
+}
+.juegos-requisitos {
+    grid-area: games;
+    width: 100%;
+}
+.juegos-requisitos .titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px
+}
+.juegos-requisitos h4 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.juegos-requisitos .barra-superior {
+    width: 62.5%;
+    height: 3px;
+    background-color: #5aa1e3;
+    margin-left: 15px;
+}
+.juegos-requisitos img {
+    max-width: 180px;
+}
+.juegos-requisitos .juegos-requisitos-amb {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(4,180px);
+    gap: 10px;
+}
+.juegos-requisitos-a {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 4;
+    margin: 50px 0;
+    border-bottom: 5px solid #0094ff;
+    padding-bottom: 25px;
+}
+.juegos-requisitos-a a {
+    color: #0094ff;
+    font-weight: 700;
+    font-size: 3rem;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.juegos-recientes {
+    grid-area: sidebar;
+    width: 390px;
+}
+.juegos-recientes .titulo-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.juegos-recientes h3 {
+    font-size: .8rem;
+    color: #00a1ff;
+}
+.juegos-recientes .barra-gris {
+    width: 50%;
+    height: 3px;
+    background-color: #f1f1f171;
+    margin-left: 10px;
+}
+.juegos-recientes img {
+    width: 140px;
+    margin-bottom: 25px;
+}
+.juegos-recientes .info-games {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+    margin: auto;
+}
+.info-games .text-games h4 {
+    width: 90%;
+    font-size: 1rem;
+    margin: 0;
+    color: #00a1ff;
+
+}
+.info-games .text-games p {
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.info-games .text-games a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(177, 173, 173);
+}
+.series-peliculas {
+    grid-area: section;
+    display: flex;
+
+}
+.series-peliculas .peliculas-series {
+    margin-right: 20px;
+}
+.series-peliculas div {
+    width: 100%;
+}
+.series-peliculas img {
+    width: 270px;
+}
+.series-peliculas div a {
+    color: #5294ff;
+    text-decoration: none;
+}
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+}
+footer div {
+    width: 25%;
+    display: flex;
+    margin-left: 35px;
+    background-color: #0094ff;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer div img {
+    width: 300px;
+
+}
